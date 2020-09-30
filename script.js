@@ -1,3 +1,4 @@
+//main function
 function rpsGame(yourChoice) {
   var humanChoice, botChoice;
   humanChoice = yourChoice.id;
@@ -10,14 +11,15 @@ function rpsGame(yourChoice) {
   console.log(message);
   rpsFrontEnd(humanChoice, botChoice, message);
 }
-
+//to take random number
 function randToRpsInt() {
   return Math.floor(Math.random() * 3);
 }
+//to take out property
 function numberToChoice(number) {
   return ["rock", "paper", "scissor"][number];
 }
-
+//deciding winner
 function decideWinner(yourChoice, botChoice) {
   var rpsDatabase = {
     rock: { scissor: 1, rock: 0.5, paper: 0 },
@@ -29,6 +31,7 @@ function decideWinner(yourChoice, botChoice) {
 
   return [yourScore, botScore];
 }
+//returning result
 function finalMessage([yourScore, botScore]) {
   if (yourScore === 0) {
     return { message: "You lost!", color: "red" };
@@ -38,6 +41,7 @@ function finalMessage([yourScore, botScore]) {
     return { message: "You won !", color: "green" };
   }
 }
+//displaying in the front end
 function rpsFrontEnd(humanImageChoice, botImageChoice, finalMessage) {
   var imagesDatabase = {
     rock: document.getElementById("rock").src,
