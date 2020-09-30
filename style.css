@@ -1,0 +1,23 @@
+body {
+  background-color: rgba(250, 244, 234, 0.7);
+}
+.container {
+  width: 75%;
+  margin: 100px auto;
+  text-align: center;
+  background-color: rgba(250, 244, 234, 1);
+}
+h1,
+h3 {
+  color: grey;
+}
+.flex-box-rps {
+  margin: 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.flex-box-rps img:hover {
+  box-shadow: 0px 10px 50px rgba(37, 50, 233, 1);
+}

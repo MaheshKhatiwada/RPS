@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>RPS</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Rock,Paper,Scissor</h1>
+      <h3>Please, Choose one!</h3>
+      <div class="flex-box-rps" id="flex-box-rps">
+        <img
+          src="https://images.homedepot-static.com/productImages/94af8836-0338-4802-914e-04cc71e562ad/svn/backyard-x-scapes-fake-rocks-hdd-rof-rocsb-64_1000.jpg"
+          height="150"
+          width="150"
+          id="rock"
+          alt=""
+          onclick="rpsGame(this)"
+        />
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSKQBYARwfT_g_HAXNXnHAX2wx7MdY0_ifN9g&usqp=CAU"
+          height="150"
+          width="150"
+          alt=""
+          id="scissor"
+          onclick="rpsGame(this)"
+        />
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ4fcmOqOKnEaan2RtOInWKm1RIyqO4q6Ew5w&usqp=CAU"
+          height="150"
+          width="150"
+          id="paper"
+          alt=""
+          onclick="rpsGame(this)"
+        />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
